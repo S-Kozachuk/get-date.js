@@ -39,7 +39,11 @@ p {
 }
 
 h1 {
+	margin-bottom: 20px;
+	display: grid;
+	justify-content: center;
 	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
 }
 
 h2 {
@@ -64,6 +68,9 @@ img {
     width: 100%;
 }
 
+
+
+
 @media(min-width: 768px) {
 	.container {
 		max-width: 740px;
@@ -75,4 +82,5 @@ img {
 	.container {
 		max-width: 1140px;
 	}
-}
+
+}	

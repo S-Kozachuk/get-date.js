@@ -81,10 +81,9 @@ ul, ol, li {
 
 
 img {
+	display: block;
     max-width: 100%;
     height: auto;
-    vertical-align: top;
-/* ограничивает размер всех изображений размером родительского контейнера */
 }
 
 .container {
@@ -95,6 +94,13 @@ img {
 
 .indents {
 	padding-bottom: 50px;
+}
+
+.sign {
+	display: inline-block;
+	margin-bottom: 20px;
+	padding: 5px;
+	background-color: #d4d4d4;
 }
 
 @media(min-width: 768px) {

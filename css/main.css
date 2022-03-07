@@ -17,6 +17,10 @@ body {
     font-size: 18px;
 }
 
+header {
+	padding-top: 50px;
+}
+
 a,
 a:hover {
     text-decoration: none;

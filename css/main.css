@@ -14,7 +14,7 @@ body {
     width: 100%;
 	font-family: "Roboto", sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 header {
@@ -70,6 +70,11 @@ h4 {
 	font-weight: 500;
 }
 
+p {
+	margin-bottom: 10px;
+	line-height: 1.25;
+}
+
 
 img {
     max-width: 100%;
@@ -99,7 +104,7 @@ img {
 
 @media(min-width: 1200px) {
 	.container {
-		max-width: 1000px;
+		max-width: 700px;
 	}
 
 }	

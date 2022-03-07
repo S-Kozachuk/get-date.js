@@ -75,6 +75,10 @@ p {
 	line-height: 1.25;
 }
 
+ul, ol, li {
+	margin-bottom: 10px;
+}
+
 
 img {
     max-width: 100%;

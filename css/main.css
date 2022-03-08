@@ -150,9 +150,13 @@ footer {
 	}
 
 	h2 {
+		margin-bottom: 40px;
 		font-size: 25px;
 	}
 	
+	h3 {
+		font-size: 22px;
+	}
 
 }
 

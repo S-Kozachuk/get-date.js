@@ -158,6 +158,10 @@ footer {
 		font-size: 22px;
 	}
 
+	h4 {
+		font-size: 19px;
+	}
+
 }
 
 @media(min-width: 1200px) {

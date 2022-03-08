@@ -144,10 +144,15 @@ footer {
 		max-width: 600px;
 	}
 
-	h1{
+	h1 {
 		margin-bottom: 30px;
 		font-size: 20px;
 	}
+
+	h2 {
+		font-size: 25px;
+	}
+	
 
 }
 
@@ -157,7 +162,7 @@ footer {
 		padding-top: 50px;
 	}
 	
-	h1{
+	h1 {
 		margin-bottom: 50px;
 		font-size: 30px;
 	}
@@ -183,7 +188,5 @@ footer {
 	.container {
 		max-width: 700px;
 	}
-
-
 
 }	

@@ -114,6 +114,14 @@ img {
     right: 20px;
 }
 
+.show__btn {
+	opacity: 1;
+}
+
+.show__btn-hide {
+	opacity: 0;
+}
+
 @media(min-width: 768px) {
 	.container {
 		max-width: 740px;

@@ -50,8 +50,8 @@ h2 {
 }
 
 h3 {
-	margin-bottom: 16px;
-	font-size: 22px;
+	margin-bottom: 10px;
+	font-size: 18px;
 	font-weight: 500;
 }
 
@@ -154,6 +154,11 @@ footer {
 	h2 {
 		margin-bottom: 60px;
 		font-size: 32px;
+	}
+
+	h3 {
+		margin-bottom: 16px;
+		font-size: 22px;
 	}
 
 	.container {

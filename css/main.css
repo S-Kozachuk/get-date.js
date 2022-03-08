@@ -87,6 +87,11 @@ img {
     height: auto;
 }
 
+footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 .container {
     margin: 0 auto;
     padding: 0 15px;
@@ -103,6 +108,20 @@ img {
 	margin-bottom: 20px;
 	padding: 5px;
 	background-color: #d4d4d4;
+}
+
+.copyright {
+	display: flex;
+	justify-content: center;
+}
+
+.copyright a{
+	text-decoration: none;
+	color: #000;
+}
+
+.copyright a:hover{
+	color: rgb(128, 51, 198);
 }
 
 #backTop a {

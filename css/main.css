@@ -112,10 +112,12 @@ img {
     color: black;
     position: fixed;
     right: 20px;
+	cursor: pointer;
 }
 
 .show__btn {
 	opacity: 1;
+	transition: .5s;
 }
 
 .show__btn-hide {

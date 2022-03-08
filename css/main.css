@@ -139,9 +139,11 @@ footer {
 }
 
 @media(min-width: 768px) {
+	
 	.container {
-		max-width: 740px;
+		max-width: 600px;
 	}
+	
 }
 
 @media(min-width: 1200px) {

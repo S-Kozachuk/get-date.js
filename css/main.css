@@ -105,6 +105,15 @@ img {
 	background-color: #d4d4d4;
 }
 
+.back-top a {
+	bottom: 10px;
+    font-size: 49px;
+    text-decoration: none;
+    color: black;
+    position: fixed;
+    right: 20px;
+}
+
 @media(min-width: 768px) {
 	.container {
 		max-width: 740px;

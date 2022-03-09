@@ -69,7 +69,9 @@ console.log(typeof d4)
 console.log(d4);
 
 // Перевод строки в объект
-const d5 = new Date ('Mon Sep 06 2021 00:00:00 GMT+0300');
-console.log(d4);
-document.querySelector('.out-1').innerHTML = d4;
+const d5 = new Date ('Mon Sep 06 2021 11:19:25 GMT+0300');
+console.log(d5);
+document.querySelector('.out-1').innerHTML = d5;
+// Среднее время по меридиану (перевод объекта data  в строку по UTC, -3 часа)	
+document.querySelector('.out-2').innerHTML = d5.toUTCString();
 

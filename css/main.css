@@ -206,8 +206,12 @@ footer {
 
 /* By lushenko lesson */
 
-.out-1 {
-	margin: 20px;
-	display: flex;
+main {
+	display: grid;
 	justify-content: center;
+}
+
+.out-1 .out-2 {
+	margin: 20px;
+	
 }

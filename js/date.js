@@ -106,3 +106,11 @@ console.log("Секунды:", d20.getSeconds());
 console.log("Unix-time:", d20.getTime());
 // Получение значения текущего времени в эпохе Unix (выаолняется непосредственно в момент запуска)
 console.log("Unix-time (через метод .now):", Date.now());
+
+// Функция getUserTime, принимающая параметр t
+function getUserTime(t) {
+	let Y = t.getFullYear();
+	console.log(Y);
+}
+
+console.log(getUserTime(1646829417607));

@@ -202,3 +202,12 @@ footer {
 	}
 
 }	
+
+
+/* By lushenko lesson */
+
+.out-1 {
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+}

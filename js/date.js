@@ -143,9 +143,11 @@ function getUserTime(t) {
 	let h = addLeadingZero(t.getHours());
 	// Извлекаем время в формате минут
 	let m = addLeadingZero(t.getMinutes());
-	console.log(Y, M, D, z, h, m);
+	// Извлекаем название месяца (Январь - Февраль)
+	let d = monthName[t.getMonth()];
+	console.log(Y, M, D, z, h, m, d);
 	// Возврат отформатированных данных (значений) в фунцию с помощью оператора return
-	return `${h}:${m} | ${D}.${M}.${Y} | ${z}`
+	return `${h}:${m} | ${D}.${M}.${Y} | ${z} | ${d}`
 }
 
 console.log(getUserTime(new Date(1991, 5, 25)));

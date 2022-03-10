@@ -121,9 +121,7 @@ function getUserTime(t) {
 	// Извлекаем год (Y = Year)
 	let Y = t.getFullYear();
 	// Извлекаем месяц (М = Month) +1 (корректировка значения) т.к. значения выводятся c 0 до 11
-	let M = t.getMonth() +1;
-	// Добавлем ведущий 0 к месяцу
-	if (M < 10) M = '0' + M;
+	let M = addLeadingZero(t.getMonth() +1);
 	console.log(Y, M);
 }
 

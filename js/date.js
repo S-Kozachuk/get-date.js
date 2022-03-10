@@ -109,8 +109,12 @@ console.log("Unix-time (через метод .now):", Date.now());
 
 // Функция getUserTime, принимающая параметр t
 function getUserTime(t) {
+	// Извлекаем год (Y = Year)
 	let Y = t.getFullYear();
 	console.log(Y);
+	// Извлекаем месяц (М = Month)
+	let M = t.getMonth();
+	console.log(M);
 }
 
-console.log(getUserTime(1646829417607));
+console.log(getUserTime(new Date(1646829417607)));

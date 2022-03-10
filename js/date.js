@@ -107,14 +107,18 @@ console.log("Unix-time:", d20.getTime());
 // Получение значения текущего времени в эпохе Unix (выаолняется непосредственно в момент запуска)
 console.log("Unix-time (через метод .now):", Date.now());
 
-// Функция getUserTime, принимающая параметр t
+/* 
+Функция getUserTime для парсинга (извлечения) даты.
+Принимает параметр t из объекта Date. В свою очердь объект Data может отдавать текущее время в мс,
+если парметры не заданы (). Либо передавать значение заданной даты в мс, указнной в (7422394823482).
+*/
 function getUserTime(t) {
 	// Извлекаем год (Y = Year)
 	let Y = t.getFullYear();
-	console.log(Y);
-	// Извлекаем месяц (М = Month)
-	let M = t.getMonth();
-	console.log(M);
+	// Извлекаем месяц (М = Month) +1 (корректировка значения) т.к. значения выводятся c 0 до 11
+	let M = t.getMonth() +1;
+	// Добавлем ведущий 0 к месяцу
+	console.log(Y, M);
 }
 
-console.log(getUserTime(new Date(1646829417607)));
+console.log(getUserTime(new Date(677833522000)));

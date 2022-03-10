@@ -142,6 +142,8 @@ function getUserTime(t) {
 	// Извлекаем время в формате минут
 	let m = addLeadingZero(t.getMinutes());
 	console.log(Y, M, D, z, h, m);
+	// Возврат отформатированных данных (значений) в фунцию с помощью оператрра return
+	return `${h}:${m} | ${D}.${M}.${Y} | ${z}`
 }
 
 console.log(getUserTime(new Date(676091105000)));

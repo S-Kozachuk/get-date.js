@@ -126,7 +126,7 @@ function getUserTime(t) {
 	// Извлекаем месяц (М = Month) +1 (корректировка значения) т.к. значения выводятся c 0 до 11
 	let M = addLeadingZero(t.getMonth() +1);
 	// if (M < 10) M = '0' + M; - более простой, но меннее лакончичный вариант добавлениея ведущего 0
-	// Извлекаем номер (значение) дня в рамках месяца
+	// Извлекаем номер дня в рамках месяца
 	let D = addLeadingZero(t.getDate());
 	// Извлекаем день недели (Вс - Сб)
 	// Присвоение числу из метода getDay соответствующего значения из массива weekDays. 2 = "Вторник" 
@@ -137,7 +137,9 @@ function getUserTime(t) {
 	В данном случае объект и метод несут в себе номер дня недели, он же явлется ключом к элементу массива.
 	*/
 	let z = weekDays[t.getDay()];
-	console.log(Y, M, D, z);
+	// Извлекаем время в формате часов
+	let h = addLeadingZero(t.getHours());
+	console.log(Y, M, D, z, h);
 }
 
-console.log(getUserTime(new Date(677833522000)));
+console.log(getUserTime(new Date(676093822000)));

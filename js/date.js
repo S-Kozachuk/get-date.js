@@ -139,7 +139,9 @@ function getUserTime(t) {
 	let z = weekDays[t.getDay()];
 	// Извлекаем время в формате часов
 	let h = addLeadingZero(t.getHours());
-	console.log(Y, M, D, z, h);
+	// Извлекаем время в формате минут
+	let m = addLeadingZero(t.getMinutes());
+	console.log(Y, M, D, z, h, m);
 }
 
-console.log(getUserTime(new Date(676093822000)));
+console.log(getUserTime(new Date(676091105000)));

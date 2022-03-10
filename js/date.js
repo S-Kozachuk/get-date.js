@@ -123,7 +123,8 @@ function getUserTime(t) {
 	// Извлекаем месяц (М = Month) +1 (корректировка значения) т.к. значения выводятся c 0 до 11
 	let M = addLeadingZero(t.getMonth() +1);
 	// if (M < 10) M = '0' + M; - более простой, но меннее лакончичный вариант добавлениея ведущего 0
-	console.log(Y, M);
+	let D = addLeadingZero(t.getDate());
+	console.log(Y, M, D);
 }
 
 console.log(getUserTime(new Date(677833522000)));

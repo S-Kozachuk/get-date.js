@@ -112,6 +112,9 @@ function addLeadingZero(z) {
 	return (z < 10) ? '0' + z : z;
 }
 
+// Массив для конвертации номера дня недели в название (понедельни - воскресенье)
+const weekDays = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+
 /* 
 Функция getUserTime для парсинга (извлечения) даты.
 Принимает параметр t из объекта Date. В свою очердь объект Data может отдавать текущее время в мс,
@@ -124,7 +127,8 @@ function getUserTime(t) {
 	let M = addLeadingZero(t.getMonth() +1);
 	// if (M < 10) M = '0' + M; - более простой, но меннее лакончичный вариант добавлениея ведущего 0
 	let D = addLeadingZero(t.getDate());
-	console.log(Y, M, D);
+	let z = t.getDay();
+	console.log(Y, M, D, z);
 }
 
 console.log(getUserTime(new Date(677833522000)));

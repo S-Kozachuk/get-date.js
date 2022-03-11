@@ -122,11 +122,21 @@ const monthName = ['Январь', 'Февраль', 'Март', 'Апрель',
 const weekNumber = [1, 2, 3, 4]
 
 // Функция, определяющая номер недели по указанному дню
-/*
-function weekId (a) {
-	if (a)
+function weekId (w) {
+	if (1 <= w && w <= 7 ) {
+    	return(1);
+	};
+	if (8 <= w && w <= 15 ) {
+		return(2);
+	};
+	if (16 <= w && w <= 23 ) {
+		return(3);
+	};
+	if (24 <= w && w <= 31 ) {
+		return(4);
+	};
 }
-*/
+
 
 /* 
 Функция getUserTime для парсинга (извлечения) даты.
@@ -156,9 +166,24 @@ function getUserTime(t) {
 	let m = addLeadingZero(t.getMinutes());
 	// Извлекаем название месяца (Январь - Февраль)
 	let d = monthName[t.getMonth()];
-	console.log(Y, M, D, z, h, m, d);
+	let w = weekId(t.getDate());
+	console.log(Y, M, D, z, h, m, d, w);
 	// Возврат отформатированных данных (значений) в функцию с помощью оператора return
-	return `${h}:${m} | ${D}.${M}.${Y} | ${z} | ${d}`
+	return `${h}:${m} | ${D}.${M}.${Y} | ${z} | ${d} | ${w} неделя`
 }
 
-console.log(getUserTime(new Date(1991, 5, 25)));
+console.log(getUserTime(new Date(1991, 5, 22)));
+
+/*
+function range(a,b){
+    let r = [a];
+    for(var i=a;i<=b;i++){
+         r.push(i);
+    }
+    return r;
+}
+
+console.log(range(25, 27));
+*/
+
+

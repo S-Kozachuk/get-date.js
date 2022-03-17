@@ -1,7 +1,7 @@
 const input = document.getElementById('data');
 const out = document.querySelector('.out');
 const btn = document.querySelector('.btn');
-let stroka = '';
+let string = '';
 
 
 btn.addEventListener('click', () => {
@@ -33,10 +33,10 @@ btn.addEventListener('click', () => {
 	*/
 	let bbb = numWeeks(dayNew, ndays);
 	// Формирование результата преобразования даты, запись в переменную stroka
-  	stroka = days[ndays] + ', ' + bbb + ' неделя ' +
+  	string = days[ndays] + ', ' + bbb + ' неделя ' +
     mm[mes] + ' ' + yars + ' года';
 	// Вывод даты в html-элемент (блок) с классом out
-  	out.innerHTML = "Дата: " + stroka;
+  	out.innerHTML = "Дата: " + string;
 });
 
 let days = [

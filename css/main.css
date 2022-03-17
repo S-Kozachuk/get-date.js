@@ -147,6 +147,10 @@ footer {
 	opacity: 0;
 }
 
+.output {
+	margin-bottom: 10px;
+}
+
 @media(min-width: 768px) {
 	
 	h1 {

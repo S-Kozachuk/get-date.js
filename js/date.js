@@ -1,5 +1,5 @@
 const input = document.getElementById('data');
-const out = document.querySelector('.out');
+const out = document.querySelector('.output');
 const btn = document.querySelector('.btn');
 let string = '';
 

@@ -1,24 +1,12 @@
-const inPut = document.getElementById('datas');
+const input = document.getElementById('data');
 const out = document.querySelector('.out');
 const btn = document.querySelector('.btn');
 let stroka = '';
 
 
 btn.addEventListener('click', () => {
-  /* 
-  Получение значения (введённой строки) из пер. inPut с помощь свой-ва value
-  value -  свойство value это метод или свойство?
-  */
-	let inpUPrevers = inPut.value;
-  /* Изменение формата строки для применения в объекте Date()
-	1. Переобразование строки в массив (метод split) по разделителю - точкой '.'
-	2. Метод reverse() задайт обратный порядок эл. в массиве.
-	3. Преобразование массива c изменённым порядком элементов обратно в строку
-	с разделителем - запятая ','
-  */
-  let inpUP = inpUPrevers.split('.').reverse().join(',');
-  console.log(inpUP); // вывод значения переменной inpUP в консоль 
-  console.log(typeof inpUP); // вывод в консоль типа данных, к которому относится значение
+	let inpUPrevers = input.value;
+  	let inpUP = inpUPrevers.split('.').reverse().join(',');
   let dataIn = new Date(inpUP); // Получение в переменную dataIn отформатированной даты из поля ввода inPut
   console.log(dataIn);
 

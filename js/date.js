@@ -7,30 +7,13 @@ let string = '';
 btn.addEventListener('click', () => {
 	let inpUPrevers = input.value;
   	let inpUP = inpUPrevers.split('.').reverse().join(',');
-  let dataIn = new Date(inpUP); // Получение в переменную dataIn отформатированной даты из поля ввода inPut
-  console.log(dataIn);
+  	let dataIn = new Date(inpUP);
 
-  // Извелчение (декомпозиция) компонентов даты, введённой в поле ввода.
-  let ndays = dataIn.getDay();// получаем день недели
-  let mes = dataIn.getMonth();// получаем месяц
-  let yars = dataIn.getFullYear();// год
-  let dayNew = dataIn.getDate();// день
+  	let ndays = dataIn.getDay();// получаем день недели
+  	let mes = dataIn.getMonth();// получаем месяц
+  	let yars = dataIn.getFullYear();// получаем год
+  	let dayNew = dataIn.getDate();// получаем день
 
-  // Создание реперной даты - первого дня первой недели.
-  /*
-	1. В переменную oneday записыватся изменённая дата (всегда 1-й день), полученная
-	из 2-ого объекта new Date. При этом год и месяй оста.тся пользовательскими (из 1-ого Date())
-	2. В переменную two записывается порядковый номер дня недели (0-6/Вс-Сб), извл. с помощью
-	метода .getDay() из модифицированной даты (перем. oneday).
-	3. В результате мы узнаём на какой день недели приходится первое число месяца.
-  */
-  //let oneday = new Date(dataIn.getFullYear(), mes, 1); // год, месяц, день (фикс. = 1)
-  //let two = oneday.getDay();//получаем день недели, приходящийся на 1-го числа месяца
-	
-	/* 
-	В перем. bbb записывается результат вып. функции numWeek(опред. № недели в предел. месяца).
-	В скобках (входящие параметры в виде перем. на основе которых f() делает расчёт № недели).
-	*/
 	let bbb = numWeeks(dayNew, ndays);
 	// Формирование результата преобразования даты, запись в переменную stroka
   	string = days[ndays] + ', ' + bbb + ' неделя ' +

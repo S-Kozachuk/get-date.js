@@ -147,6 +147,10 @@ footer {
 	opacity: 0;
 }
 
+.btn {
+	margin-bottom: 10px;
+}
+
 .output {
 	margin-bottom: 10px;
 }

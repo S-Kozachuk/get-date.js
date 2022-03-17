@@ -4,7 +4,7 @@ const btn = document.querySelector('.btn');
 let string = '';
 
 
-btn.addEventListener('click', () => {
+btn.addEventListener('click', function getDayInfo () {
 	let inpUPrevers = input.value;
   	let inpUP = inpUPrevers.split('.').reverse().join(',');
   	let dataIn = new Date(inpUP);
@@ -44,55 +44,34 @@ let mm = [
   'Декабря'
 ];
 
-// Функция numWeeks возвращающая номер недели в рамках месяца
-//function numWeeks(day, numday) {
-  // Вычисляемый номер неделя
-  //let number = 0;
-  //let summ = 0;
-  /* 
-  Проверка. Явлется ли переданный день недели Воскресеньем (0)?
-  Если да, то преобразуем его в "привычный" формат, меня номер на 7.
-  Если нет, то условие (if) пропускаеся.
-  В объекте Date Воскресенье соответсвует 0. В привычном виде Вс соотв. 7.
-  */
- /*
-  if (numday == 0) {
-    numday = 7;
-    number++;
-  }
-  */
-  /*
-  Избавляемся от неполных недель. Преобразуем в полную.
-  Например, если месяц начинается с вторника или среды.	
-  Вычитаем порядковый номер дня недели из 8.
-  С этого момента numday является кол-ом дней в 1-ой недели, а не днём недели как в начале функции.
-  Т.е. происходит перезапись значения переменной numday.
-  */
-  //numday = 8 - numday;
-  /*
-  Проверка.
-  Если день (numday) не приходится на понедельник (1) - увеличиваем номер недели (number) на 1.
-  Затем из фактического кол-ва дней (day) вычитаем кол-во дней, полученное из 1-ой недели.
-  */
- /*
-  if (numday != 1) {
-    number++;
+// 1-й вариант функции numWeeks, возвращающей номер недели
+function numWeeks(day, numday) {
+	let number = 0;
+	let summ = 0;
+
+	if (numday == 0) {
+    	numday = 7;
+    	number++;
+	};
+
+	numday = 8 - numday;
+  
+	if (numday != 1) {
+	number++;
     day -= numday;
-  }
-  */
-  /* 
-  Полученную разницу, делим (с округлением в большую сторону) на 7 (кол-во) дней в недели.
-  Складываем вычисленное кол-во дней(summ) с 1-ой неделей (number).
-  Вычисленный номер недели возвращаем в функцию.
-  */
- /*
-  summ = Math.ceil(day / 7);
-  number += summ;
-  return number;
+	};
+
+	summ = Math.ceil(day / 7);
+  	number += summ;
+  	return number;
 }
-*/
+
 
 // 2-ой вариант функции для расчёта номера недели (через while, с обр. ст. каледаря)
+/* 
+Для тестирвания закомментировать 1-й варинат (см. 48-ст) и
+раскоментировать 2-ой вариант.
+*/
 /*
 function numWeeks(day, dayWeek) {
 	let resultate = 0;
@@ -109,3 +88,5 @@ function numWeeks(day, dayWeek) {
 	return resultate;
 }
 */
+
+// P.S. 

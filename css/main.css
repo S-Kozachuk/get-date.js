@@ -156,7 +156,7 @@ footer {
 }
 
 .nav__btn a {
-	display: block;
+	display: inline-block;
 	margin: 0 auto;
 	background-color: #b9b9b9;
 	color: white;

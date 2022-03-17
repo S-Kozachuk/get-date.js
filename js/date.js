@@ -93,11 +93,11 @@ let mm = [
 */
 
 // 2-ой вариант функции для расчёта номера недели (через while, с обр. ст. каледаря)
+/*
 function numWeeks(day, dayWeek) {
-let resultate = 0;
-if (dayWeek == 0) dayWeek = 7;
-
-while (day != 1) {
+	let resultate = 0;
+	if (dayWeek == 0) dayWeek = 7;
+	while (day != 1) {
     	if (dayWeek == 1) {
 		dayWeek = 8;
     	resultate++;
@@ -108,3 +108,4 @@ while (day != 1) {
 	if (dayWeek >= 1) resultate ++;
 	return resultate;
 }
+*/

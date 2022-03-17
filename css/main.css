@@ -155,6 +155,11 @@ footer {
 	margin-bottom: 10px;
 }
 
+.nav__btn {
+	margin-top: 40px;
+	display: flex;
+}
+
 .nav__btn a {
 	display: inline-block;
 	margin: 0 auto;

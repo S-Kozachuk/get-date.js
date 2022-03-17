@@ -82,6 +82,15 @@ img {
     height: auto;
 }
 
+main {
+	display: grid;
+	justify-content: center;
+}
+
+input {
+	margin-bottom: 10px;
+}
+
 footer {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -204,14 +213,3 @@ footer {
 }	
 
 
-/* By lushenko lesson */
-
-main {
-	display: grid;
-	justify-content: center;
-}
-
-.out-1 .out-2 {
-	margin: 20px;
-	
-}
